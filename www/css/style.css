@@ -1,0 +1,41 @@
+/**/
+.box{
+     background-color: black;
+     opacity: 1.0;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom:50px;
+     border-bottom-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+}
+.titulo{
+     background-color: black;
+     opacity: 1.0;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50%;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     text-align: center;
+     color: white;
+}
+#cadastrar:hover{
+     background-color:orange;
+     color: white;
+}
+#buscar:hover{
+     background-color:rgb(7, 49, 139);
+     color: white;
+}
+body{
+     background-color:lightgreen;     
+}
+button{
+     margin-top: 10px;
+}
+.first{
+     margin-top: 200px;
+}
+.cabecalho{
+     text-align: center;
+}

@@ -1,56 +1,45 @@
-var root = document.documentElement;
-root.className += ' js';
+/**/
 
-function boxTop(idBox) {
-	var boxOffset = $(idBox).offset().top;
-	return boxOffset;
+$(document).on("click", "#scanear", function(){
+    scanBarcode();
+});
+
+function scanBarcode() {
+    cordova.plugins.barcodeScanner.scan(
+        function (result) {                 
+            $("#codigo").val(result.text);
+        },
+        function (error) {
+          alert("codigo invalido: " + error);
+        }
+    );    
 }
 
-$(document).ready(function() {
-	var $target = $('.anime'),
-			animationClass = 'anime-init',
-			windowHeight = $(window).height(),
-			offset = windowHeight - (windowHeight / 4);
+$(document).on("click", "#create", function(){
+    var parametros = {
+        "codigo": $("#codigo").val(),
+        "nome": $("#nome").val(),
+        "idade": $("#idade").val(),
+        "sexo": $("#sexo").val(),
+        "endereco": $("#endereco").val(),
+        "cpf": $("#cpf").val(),
+    }
 
-	function animeScroll() {
-		var documentTop = $(document).scrollTop();
-		$target.each(function() {
-			if (documentTop > boxTop(this) - offset) {
-				$(this).addClass(animationClass);
-			} else {
-				$(this).removeClass(animationClass);
-			}
-		});
-	}
-	animeScroll();
-
-	$(document).scroll(function() {
-		setTimeout(function() {animeScroll()}, 150);
-	});
+    $.ajax({
+        type: "post",
+        url:"https://appmobile3ds2.000webhostapp.com/atvCadastroPessoas/cadastro.php",
+        data:parametros,
+        success: function(data){
+            navigator.notification.alert(data);
+            $("#codigo").val(""),
+            $("#nome").val(""),
+            $("#idade").val(""),
+            $("#sexo").val(""),
+            $("#endereco").val(""),
+            $("#cpf").val("")
+        },
+        error: function(data){
+            navigator.notification.alert(data);
+        }
+    });
 });
-$(document).ready(function() {
-	var $target = $('.anime1'),
-			animationClass = 'anime-init',
-			windowHeight = $(window).height(),
-			offset = windowHeight - (windowHeight / 4);
-
-	function animeScroll() {
-		var documentTop = $(document).scrollTop();
-		$target.each(function() {
-			if (documentTop > boxTop(this) - offset) {
-				$(this).addClass(animationClass);
-			} else {
-				$(this).removeClass(animationClass);
-			}
-		});
-	}
-	animeScroll();
-
-	$(document).scroll(function() {
-		setTimeout(function() {animeScroll()}, 150);
-	});
-});
-function searchnav() {
-  document.getElementById("search").style.display = "block";
-}
-

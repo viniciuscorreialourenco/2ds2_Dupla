@@ -28,7 +28,7 @@
      color: white;
 }
 body{
-     background-color:lightgreen;     
+     background-color:darkslateblue;     
 }
 button{
      margin-top: 10px;
@@ -38,4 +38,7 @@ button{
 }
 .cabecalho{
      text-align: center;
+}
+label{
+     color: white;
 }

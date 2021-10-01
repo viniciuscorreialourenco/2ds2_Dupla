@@ -1,44 +1,32 @@
-/**/
-.box{
-     background-color: black;
-     opacity: 1.0;
-     margin-left: auto;
-     margin-right: auto;
-     padding-bottom:50px;
-     border-bottom-left-radius: 15px;
-     border-bottom-right-radius: 15px;
-}
-.titulo{
-     background-color: black;
-     opacity: 1.0;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 50%;
-     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
-     text-align: center;
-     color: white;
-}
-#cadastrar:hover{
-     background-color:orange;
-     color: white;
-}
-#buscar:hover{
-     background-color:rgb(7, 49, 139);
-     color: white;
+*{
+     margin: 0px;
+     padding: 0px;
 }
 body{
-     background-color:darkslateblue;     
+     background-color: lightseagreen;
 }
-button{
-     margin-top: 10px;
-}
-.first{
+.container{
+     background-color:coral;
+     padding: 50px;
+     max-width: 400px;
+     margin-left: auto;
+     margin-right: auto;
      margin-top: 200px;
+     border-radius: 5px;
 }
-.cabecalho{
+.btn{
+     margin: 10px;
+     color: rgba(0, 0, 0, 0.589);
+     font-weight: bold;
+}
+a:hover{
+     text-decoration: none;
+     color: rgba(0, 0, 0, 0.589);
+     font-weight: bold;
+}
+.titulo{
      text-align: center;
-}
-label{
      color: white;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 5px;
 }

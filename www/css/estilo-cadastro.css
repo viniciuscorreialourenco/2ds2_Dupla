@@ -1,0 +1,42 @@
+body{
+    background-color: #A3E7FC;
+    padding: 2%;
+}
+.container{
+    background-color: #26C485;    
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px hsla(179, 48%, 38%, 0.365);
+}
+input{
+    margin-bottom: 15px;
+}
+button{
+    margin-bottom: 15px;
+}
+h1{
+    color: white;
+}
+label{
+    color: black;
+}
+.botoes{
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+#captura{
+    background-color: #32908F;
+}
+#idita{
+    background-color: #32908F;
+}
+#cancela{
+    background-color: #e7b62f;
+}
+#create{
+    background-color: #32908F;
+}
+#scanear{
+    background-color: #c02b2b;
+}

@@ -3,16 +3,18 @@
      padding: 0px;
 }
 body{
-     background-color: lightseagreen;
+     background-color: #A3E7FC;
 }
 .container{
-     background-color:coral;
+     background-color:#26C485;
      padding: 50px;
      max-width: 400px;
      margin-left: auto;
      margin-right: auto;
      margin-top: 200px;
      border-radius: 5px;
+     border: 2px solid white;
+     box-shadow: 5px 5px 5px hsla(179, 48%, 38%, 0.365);
 }
 .btn{
      margin: 10px;
@@ -23,6 +25,16 @@ a:hover{
      text-decoration: none;
      color: rgba(0, 0, 0, 0.589);
      font-weight: bold;
+}
+#cadastrar{
+     background-color: #32908F;
+     color: white;
+     border: 1px solid white;
+}
+#buscar{
+     background-color: #e7b62f;
+     color: white;
+     border: 1px solid white;
 }
 .titulo{
      text-align: center;

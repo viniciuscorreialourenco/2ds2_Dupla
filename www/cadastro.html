@@ -8,59 +8,48 @@
                          
           <link rel="stylesheet" href="components/loader.css">
           <link rel="stylesheet" href="css/bootstrap.min.css">
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/estilo-cadastro.css">
      </head>
      <body>
           <div class="container">
                <div class="row cabecalho">
                    <div class="col-xs-12">
-                        <h1>Titulo</h1>
+                        <h1>CADASTRO</h1>
                    </div>
                </div>
 
                <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">QR code</label>
+                    <div class="col-xs-6">
+                         <label for="">QR CODE</label>
                          <input type="text" class="form-control" id="codigo">
                     </div>
-               </div>
-
-               <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">nome</label>
+                    <div class="col-xs-6">
+                         <label for="">NOME:</label>
                          <input type="text" class="form-control" id="nome">
                     </div>
                </div>
 
                <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">idade:</label>
+                    <div class="col-xs-4">
+                         <label for="">IDADE:</label>
                          <input type="number" class="form-control" id="idade"> 
                     </div>
-               </div>
-
-               <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">sexo:</label>
+                    <div class="col-xs-4">
+                         <label for="">SEXO:</label>
                          <input type="text" class="form-control" id="sexo">
                     </div>
-               </div>
-
-               <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">endereço:</label>
-                         <input type="text" class="form-control" id="endereco">
-                    </div>
-               </div>
-
-               <div class="row">
-                    <div class="col-xs-12">
-                         <label for="">cpf:</label>
+                    <div class="col-xs-4">
+                         <label for="">CPF:</label>
                          <input type="text" class="form-control" id="cpf">
                     </div>
                </div>
 
-               <br/>
+               <div class="row">
+                    <div class="col-xs-12">
+                         <label for="">ENDEREÇO:</label>
+                         <input type="text" class="form-control" id="endereco">
+                    </div>
+               </div>
 
                <div class="row">
                     <div class="col-xs-12">
@@ -69,33 +58,26 @@
                </div>
 
                <div class="row">
-                    <div class="col-xs-12">
-                         <button class="form-control btn-warning">capturar foto</button>
+                    <div class="col-xs-6">
+                         <button class="form-control botoes" id="captura">CAPTURAR FOTO</button>
+                    </div>
+                    <div class="col-xs-6">
+                         <button class="form-control botoes" id="create">CRIAR</button>
                     </div>
                </div>
 
                <div class="row">
                     <div class="col-xs-6">
-                         <button class="form-control btn-primary">editar</button>
+                         <button class="form-control botoes" id="idita">EDITAR</button>
                     </div>
                     <div class="col-xs-6">
-                         <button class="form-control btn-danger">cancelar</button>
+                         <button class="form-control botoes" id="cancela">CANCELAR</button>
                     </div>
                </div>
 
                <div class="row">
                     <div class="col-xs-12">
-
-                         <button class="form-control" id="create">criar</button>
-                    </div>
-               </div>
-
-               <div class="row">
-                    <div class="col-xs-12">
-                         <button class="form-control" id="scanear">scanear codigo</button>
-
-                         <button class="form-control btn-success">criar</button>
-
+                         <button class="form-control botoes" id="scanear">SCANEAR CODIGO</button>
                     </div>
                </div>
           </div>
